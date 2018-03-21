@@ -256,20 +256,23 @@
                   slides[slideIndex-1].style.display = "block";
                   dots[slideIndex-1].className += " active";
               }
-        
+      </script>
 
-    </script>
       <hr class="featurette-divider">
-<!--
+
       <div class="row featurette">
         <div class="col-md-5">
           <div class="slideshow-container">
-                <div class="PlayPhasePics">
-                  <img src="/img/character.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                <div class="Characters Pic">
+                  <img src="/img/front.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
                 </div>
 
-                <div class="PlayPhasePics">
-                  <img src="/img/character1.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                <div class="Characters Pic">
+                  <img src="/img/side.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                </div>
+
+                 <div class="Characters Pic">
+                  <img src="/img/Back.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -278,10 +281,40 @@
           <div style="text-align: center">
               <span class="dot" onclick="currentSlide(1)"> </span>
               <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
           </div>
         </div>
        </div>
--->
+
+        <script >
+        var slideIndex = 1;
+              Characters(slideIndex);
+              function plusSlides(n) {
+                PlayPhase(slideIndex += n);
+              }
+
+              function currentSlide(n) {
+                Characters(slideIndex = n);
+              }
+
+              function Characters(n) {
+                var i;
+                var slides = document.getElementsByClassName("Characters");
+                var dots = document.getElementsByClassName("dot");
+                if(n > slides.length) {slideIndex = 1}
+                if(n < 1) {slideIndex = slides.length}
+                  
+                  for(i = 0; i < slides.length; i++){
+                    slides[i].style.display = "none";
+                  }
+
+                  for(i = 0; i < dots.length; i++){
+                    dots[i].className = dots[i].className.replace("active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+              }
+      </script>
 
       <hr class="featurette-divider">
 
