@@ -287,8 +287,8 @@
        </div>
 
         <script >
-          var slides = 1;
-              Characters(slides);
+          var pics = 1;
+              Characters(pics);
               function pSlides(n) {
                 Characters(slideI += n);
               }
@@ -299,19 +299,19 @@
 
               function Characters(n) {
                 var i;
-                var slides = document.getElementsByClassName("Characters");
+                var pics = document.getElementsByClassName("Characters");
                 var circles = document.getElementsByClassName("circle");
-                if(n > slides.length) {slideI = 1}
-                if(n < 1) {slideI = slides.length}
+                if(n > pics.length) {slideI = 1}
+                if(n < 1) {slideI = pics.length}
                   
-                  for(i = 0; i < slides.length; i++){
-                    slides[i].style.display = "none";
+                  for(i = 0; i < pics.length; i++){
+                    pics[i].style.display = "none";
                   }
 
                   for(i = 0; i < circles.length; i++){
                     circles[i].className = circles[i].className.replace("active", "");
                   }
-                  slides[slideI-1].style.display = "block";
+                  pics[slideI-1].style.display = "block";
                   circles[slideI-1].className += " active";
               }
       </script>
