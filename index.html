@@ -309,7 +309,7 @@
                   }
 
                   for(i = 0; i < circles.length; i++){
-                    circles[i].className = dots[i].className.replace("active", "");
+                    circles[i].className = circles[i].className.replace("active", "");
                   }
                   slides[slideIndex-1].style.display = "block";
                   circles[slideIndex-1].className += " active";
