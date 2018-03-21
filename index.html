@@ -279,9 +279,9 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
           <div style="text-align: center">
-              <span class="dot" onclick="currentSlide(1)"> </span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="circle" onclick="currentSlide(1)"> </span>
+              <span class="circle" onclick="currentSlide(2)"></span>
+              <span class="circle" onclick="currentSlide(3)"></span>
           </div>
         </div>
        </div>
@@ -300,7 +300,7 @@
               function Characters(n) {
                 var i;
                 var slides = document.getElementsByClassName("Characters");
-                var dots = document.getElementsByClassName("dot");
+                var circles = document.getElementsByClassName("circle");
                 if(n > slides.length) {slideIndex = 1}
                 if(n < 1) {slideIndex = slides.length}
                   
@@ -308,11 +308,11 @@
                     slides[i].style.display = "none";
                   }
 
-                  for(i = 0; i < dots.length; i++){
-                    dots[i].className = dots[i].className.replace("active", "");
+                  for(i = 0; i < circles.length; i++){
+                    circles[i].className = dots[i].className.replace("active", "");
                   }
                   slides[slideIndex-1].style.display = "block";
-                  dots[slideIndex-1].className += " active";
+                  circles[slideIndex-1].className += " active";
               }
       </script>
 
