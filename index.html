@@ -276,7 +276,7 @@
                 </div>
 
                 <a class="last" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="chnage" onclick="plusSlides(1)">&#10095;</a>
+                <a class="change" onclick="plusSlides(1)">&#10095;</a>
           </div>
           <div style="text-align: center">
               <span class="circle" onclick="currentSlide(1)"> </span>
@@ -290,7 +290,7 @@
         var slideIndex = 1;
               Characters(slideIndex);
               function plusSlides(n) {
-                PlayPhase(slideIndex += n);
+                Characters(slideIndex += n);
               }
 
               function currentSlide(n) {
