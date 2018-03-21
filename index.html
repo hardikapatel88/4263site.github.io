@@ -275,13 +275,13 @@
                   <img src="/img/back.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
                 </div>
 
-                <a class="last" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="change" onclick="plusSlides(1)">&#10095;</a>
+                <a class="last" onclick="pSlides(-1)">&#10094;</a>
+                <a class="change" onclick="pSlides(1)">&#10095;</a>
           </div>
           <div style="text-align: center">
-              <span class="circle" onclick="currentSlide(1)"> </span>
-              <span class="circle" onclick="currentSlide(2)"></span>
-              <span class="circle" onclick="currentSlide(3)"></span>
+              <span class="circle" onclick="curSlide(1)"> </span>
+              <span class="circle" onclick="curSlide(2)"></span>
+              <span class="circle" onclick="curSlide(3)"></span>
           </div>
         </div>
        </div>
@@ -289,11 +289,11 @@
         <script >
           var slides = 1;
               Characters(slideI);
-              function plusSlides(n) {
+              function pSlides(n) {
                 Characters(slideI += n);
               }
 
-              function currentSlide(n) {
+              function curSlide(n) {
                 Characters(slideI = n);
               }
 
