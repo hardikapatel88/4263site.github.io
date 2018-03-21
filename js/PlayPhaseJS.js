@@ -1,17 +1,17 @@
 
       var slideIndex = 1;
-      PlayPhase(slideIndex);
+      PlayPhasePics(slideIndex);
       function plusSlides(n) {
         PlayPhase(slideIndex += n);
       }
 
       function currentSlide(n) {
-        PlayPhase(slideIndex = n);
+        PlayPhasePics(slideIndex = n);
       }
 
       function PlayPhase(n) {
         var i;
-        var slides = document.getElementsByClassName("PlayPhase");
+        var slides = document.getElementsByClassName("PlayPhasePics");
         var dots = document.getElementsByClassName("dot");
         if(n > slides.length) {slideIndex = 1}
         if(n < 1) {slideIndex = slides.length}
