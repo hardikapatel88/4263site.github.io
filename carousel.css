@@ -184,10 +184,18 @@ body {
 .active, .dot:hover {
   background-color: #717171;
 }
-
-.characters {
-  display: none;
+ 
+ // Characters containers
+.characters-container{
+  max-width: 500px;
+  position: relative;
+  margin: auto;
 }
+
+.Characters{
+   display: none;
+}
+
 .last, .change {
   cursor: pointer;
   position: absolute;
@@ -199,6 +207,16 @@ body {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
+
+.chnage {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.last:hover, .change:hover {
+  background-color: rgba(0,0,0.8);
+}
+
 .circle {
   cursor: pointer;
   height: 15px;
@@ -209,6 +227,7 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+
 .active, .circle:hover {
   background-color: #717171;
 }
