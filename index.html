@@ -286,6 +286,37 @@
         </div>
        </div>
 
+       <script type="text/javascript">
+         var slideI = 1;
+         ShowPics(slideI);
+
+         function pSlides(n) {
+          ShowPics(slideI += n);
+         }
+
+         function curSlide(n) {
+            ShowPics(slideI = n)
+         }
+
+         functionn Characters(n) {
+           var i;
+           var pics = document.getElementsByClassName("Characters");
+           var circles = document.getElementsByClassName("circle");
+           if(n > pics.length) {slideI = 1}
+            if(n < 1) {slideI = pics.length}
+
+              for(i = 0; i < pics.length; i++){
+                pics[i].style.display = "none";
+              }
+
+              for(i = 0; i < circles.length; i++){
+                circles[i].className = circles[i].className.replace(" active", "");
+              }
+              pics[slideI-1].style.display = "block";
+              circles[slideI-1].className += " active";
+         }
+
+       </script>
        
       <hr class="featurette-divider">
 
