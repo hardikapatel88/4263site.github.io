@@ -261,35 +261,35 @@
 
       <hr class="featurette-divider">
 
-      <div class="row">
+      <div class="row featurette">
         <div class="col-md-5">
           <div class="characters1-container">
                 <div class="Characters Pic">
                   <img src="/img/Magefront.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
-                  <div class="text">Mage</div>
+                  <div class="text" >Mage</div>
                 </div>
 
                 <div class="Characters Pic">
                   <img src="/img/MageSide.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
-                  <div class="text">Mage</div>
+                  <div class="text" >Mage</div>
                 </div>
 
                  <div class="Characters Pic">
                   <img src="/img/MageBack.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
-                  <div class="text">Mage</div>
+                  <div class="text" >Mage</div>
                 </div>
 
-                <a class="last" onclick="pSlides(-1,0)">&#10094;</a>
-                <a class="change" onclick="pSlides(1,0)">&#10095;</a>
+                <a class="last" onclick="pSlides(-1)">&#10096;</a>
+                <a class="change" onclick="pSlides(1)">&#10097;</a>
           </div>
           <br>
           <div style="text-align: center">
-              <span class="circle" onclick="curSlide(1,0)"> </span>
-              <span class="circle" onclick="curSlide(2,0)"></span>
-              <span class="circle" onclick="curSlide(3,0)"></span>
+              <span class="circle" onclick="curSlide(1)"> </span>
+              <span class="circle" onclick="curSlide(2)"></span>
+              <span class="circle" onclick="curSlide(3)"></span>
           </div>
         </div>
-<!--
+
         <script>
          var slideI = 1;
          ShowPics(slideI);
@@ -321,11 +321,11 @@
          }
 
        </script>
--->
+
         <div class="col-md-5">
           <div class="characters2-container">
                 <div class="Characters2 Pic">
-                  <img src="/img/ArcherFront.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <img src="/img/ArcherFront.png" style="width: 100%"  class="featurette-image img-responsive center-block" alt="Generic placeholder image">
                   <div class="text">Archer</div>
                 </div>
 
@@ -339,17 +339,17 @@
                   <div class="text">Archer</div>
                 </div>
 
-                <a class="last" onclick="pSlides(-1,1)">&#10094;</a>
-                <a class="change" onclick="pSlides(1,1)">&#10095;</a>
+                <a class="last1" onclick="pSlides1(-1)">&#10096;</a>
+                <a class="change1" onclick="pSlides1(1)">&#10097;</a>
           </div>
           <br>
           <div style="text-align: center">
-              <span class="circle" onclick="curSlide(1,0)"> </span>
-              <span class="circle" onclick="curSlide(2,0)"></span>
-              <span class="circle" onclick="curSlide(3,0)"></span>
+              <span class="circle1" onclick="curSlide1(1)"> </span>
+              <span class="circle1" onclick="curSlide1(2)"></span>
+              <span class="circle1" onclick="curSlide1(3)"></span>
           </div>
         </div>
-<!--
+
         <script>
          var slide1 = 1;
          ShowPics1(slide1);
@@ -381,7 +381,7 @@
          }
 
        </script>
--->
+
        <div class="col-md-5">
           <div class="characters3-container">
                 <div class="Characters3 Pic">
@@ -389,54 +389,27 @@
                   <div class="text">Knight</div>
                 </div>
 
-                <div class="Characters3 Pic">
+                <div class="Characters2 Pic">
                   <img src="/img/knightSide.png" style="width: 100%" height="600" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
                   <div class="text">Knight</div>
                 </div>
 
-                 <div class="Characters3 Pic">
+                 <div class="Characters2 Pic">
                   <img src="/img/knightBack.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
                   <div class="text">Knight</div>
                 </div>
 
-                <a class="last" onclick="pSlides(-1,2)">&#10094;</a>
-                <a class="change" onclick="pSlides(1,2)">&#10095;</a>
+                <a class="last2" onclick="pSlides2(-1)">&#10096;</a>
+                <a class="change2" onclick="pSlides2(1)">&#10097;</a>
           </div>
           <br>
           <div style="text-align: center">
-              <span class="circle" onclick="curSlide(1,0)"> </span>
-              <span class="circle" onclick="curSlide(2,0)"></span>
-              <span class="circle" onclick="curSlide(3,0)"></span>
+              <span class="circle2" onclick="curSlide2(1)"> </span>
+              <span class="circle2" onclick="curSlide2(2)"></span>
+              <span class="circle2" onclick="curSlide2(3)"></span>
           </div>
         </div>
 
-        <script type="text/javascript">
-          var slideI = [1, 2];
-          var slideID = ["Characters", "Characters2", "Characters3"];
-          showSlides(1,0);
-          showSlides(1,1);
-          showSlides(1,2);
-
-          function pSlides(n, no){
-            showSlides(slideI[no] += n, no);
-          }
-          function curSlide(n) {
-              showSlides(slideID = n)
-           }
-
-          function showSlides(n, no) {
-            var i;
-            var x = document.getElementsByClassName(slideID[no]);
-            if(n > x.length) {slideI[no] = 1}
-            if(n < 1) {slideI[no] = x.length}
-            for (i = 0; i < x.length; i++){
-                x[i].style.display = "none";
-            } 
-            slideI[no-1].style.display = "block";
-            
-          }
-        </script>
-<!--
         <script>
            var slide2 = 1;
            ShowPics2(slide2);
@@ -468,7 +441,7 @@
            }
 
          </script>
--->
+
        </div>
        
        
