@@ -231,7 +231,7 @@ body {
   border-radius: 0 3px 3px 0;
 }
 
-.chnage {
+.change {
   right: 1;
   border-radius: 3px 0 0 3px;
 }
@@ -265,7 +265,9 @@ body {
   background-color: #717171;
 }
 
-
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text, .last, .change {font-size: 11px}
+}
 
 
 
