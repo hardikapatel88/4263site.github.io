@@ -331,13 +331,13 @@ body {
 
 // Characters3 containers
 
-.characters3-container{
+.characters3-container {
   max-width: 300px;
   position: relative;
   margin: auto;
 }
 
- .Characters3{
+ .Characters3 {
    display: none;
 }
 
