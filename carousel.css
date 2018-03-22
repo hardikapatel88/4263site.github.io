@@ -356,14 +356,13 @@ body {
 }
 
 .change2 {
-  right: 1;
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 .last2:hover, .change2:hover {
   background-color: rgba(0,0,0.8);
 }
-
 
 .circle2 {
   cursor: pointer;
