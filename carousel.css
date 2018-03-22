@@ -308,16 +308,6 @@ body {
   background-color: rgba(0,0,0.8);
 }
 
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: left;
-}
-
 .circle1 {
   cursor: pointer;
   height: 15px;
@@ -436,7 +426,7 @@ body {
 
 
 @media only screen and (max-width: 300px) {
-  .prev, .next, .text, .last, .change {font-size: 11px}
+  .prev, .next, .text {font-size: 11px}
 }
 
 
