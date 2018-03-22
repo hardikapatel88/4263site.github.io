@@ -346,14 +346,14 @@
              var i;
              var pic = document.getElementsByClassName("slideId[no]");
             
-             if(n > pic.length) {slideI[no] = 2}
+             if(n > pic.length) {slideI[no] = 1}
               if(n < 2) {slideI = pic.length}
 
                 for(i = 0; i < pic.length; i++){
                   pic[i].style.display = "none";
                 }
 
-                pic[slideI[no]-2].style.display = "block";
+                pic[slideI[no]-1].style.display = "block";
            }
 
          </script>
