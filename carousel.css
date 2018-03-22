@@ -213,7 +213,7 @@ body {
    display: none;
 }
 
-.characters-container{
+.characters1-container{
   max-width: 300px;
   position: relative;
   margin: auto;
@@ -301,6 +301,16 @@ body {
 
 .last1:hover, .change1:hover {
   background-color: rgba(0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
 }
 
 .circle1 {
