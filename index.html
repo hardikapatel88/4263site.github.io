@@ -279,8 +279,8 @@
                   <div class="text">Mage</div>
                 </div>
 
-                <a class="last" onclick="pSlides(-1)">&#10096;</a>
-                <a class="change" onclick="pSlides(1)">&#10097;</a>
+                <a class="last"   onclick="pSlides(-1)">&#10094;</a>
+                <a class="change" onclick="pSlides(1)">&#10095;</a>
           </div>
           <br>
           <div style="text-align: center">
@@ -292,17 +292,17 @@
 
         <script>
          var slideI = 1;
-         ShowPics(slideI);
+         Characters(slideI);
 
          function pSlides(n) {
-          ShowPics(slideI += n);
+          Characters(slideI += n);
          }
 
          function curSlide(n) {
-            ShowPics(slideI = n)
+            Characters(slideI = n)
          }
 
-         function ShowPics(n) {
+         function Characters(n) {
            var i;
            var pics = document.getElementsByClassName("Characters");
            var circles = document.getElementsByClassName("circle");
