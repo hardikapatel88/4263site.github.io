@@ -339,8 +339,8 @@
                   <div class="text">Archer</div>
                 </div>
 
-                <a class="last1" onclick="pSlides1(-1)">&#10096;</a>
-                <a class="change1" onclick="pSlides1(1)">&#10097;</a>
+                <a class="last1" onclick="pSlides1(-1)">&#10094;</a>
+                <a class="change1" onclick="pSlides1(1)">&#10095;</a>
           </div>
           <br>
           <div style="text-align: center">
@@ -399,8 +399,8 @@
                   <div class="text">Knight</div>
                 </div>
 
-                <a class="last2" onclick="pSlides2(-1)">&#10096;</a>
-                <a class="change2" onclick="pSlides2(1)">&#10097;</a>
+                <a class="last2" onclick="pSlides2(-1)">&#10094;</a>
+                <a class="change2" onclick="pSlides2(1)">&#10095;</a>
           </div>
           <br>
           <div style="text-align: center">
@@ -412,17 +412,17 @@
 
         <script>
            var slide2 = 1;
-           ShowPics2(slide2);
+           Characters3(slide2);
 
            function pSlides2(n) {
-            ShowPics2(slide2 += n);
+            Characters3(slide2 += n);
            }
 
            function curSlide2(n) {
-              ShowPics2(slide2 = n)
+              Characters3(slide2 = n)
            }
 
-           function ShowPics2(n) {
+           function Characters3(n) {
              var i;
              var pic1 = document.getElementsByClassName("Characters3");
              var circles2 = document.getElementsByClassName("circle2");
