@@ -263,28 +263,27 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <div class="characters-container">
-                <div class="Characters">
-                  <img src="/img/Magefront.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+          <div class="characters-container cs" tabindex="1" autofocus="autofocus">
+                <figure>
+                  <img src="/img/Magefront.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image" />
                   <div class="text" >Mage</div>
-                </div>
+                </figure>
 
-                <div class="Characters">
+                <figure>
                   <img src="/img/MageSide.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
                   <div class="text" >Mage</div>
-                </div>
+                </figure>
 
-                 <div class="Characters">
+                <figure> 
                   <img src="/img/MageBack.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
                   <div class="text" >Mage</div>
-                </div>
+                </figure>
 
                 <a class="last" onclick="pSlides(-1,0)">&#10096;</a>
                 <a class="change" onclick="pSlides(1,0)">&#10097;</a>
           </div>
-          <br>
         </div>
-
+<!--
         <div class="col-md-5">
           <div class="characters-container">
                 <div class="Characters2">
@@ -331,6 +330,21 @@
           </div>
         </div>
 
+-->
+        <script src="demo/js/hammer.min.js"></script><!-- for swipe support on touch interfaces -->
+        <script src="js/better-simple-slideshow.min.js"></script>
+        <script >
+          var opts = {
+            auto : {
+              speed = 3500,
+              pauseOnHover : true;
+            },
+            fullScreen : false,
+            swipe : true
+          };
+          makeBSS('.cs', opts);
+        </script>
+ <!--       
         <script>
            var slideI = [1,1];
            var slideId = ["Characters", "Characters2", "Characters3"]
@@ -357,7 +371,7 @@
            }
 
          </script>
-
+-->
        </div>
        
        
