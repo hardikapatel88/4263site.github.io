@@ -379,6 +379,56 @@ body {
   background-color: #717171;
 }
 
+// Characters4 containers
+
+.characters4-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+ .Characters4 {
+   display: none;
+}
+
+.last3, .change3 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.change3 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.last3:hover, .change3:hover {
+  background-color: rgba(0,0,0.8);
+}
+
+.circle3 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.act3, .circle3:hover {
+  background-color: #717171;
+}
+
 
 @media only screen and (max-width: 300px) {
   .prev, .next, .text, .last, .change {font-size: 11px}

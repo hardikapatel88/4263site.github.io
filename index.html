@@ -265,17 +265,17 @@
         <div class="col-md-5">
           <div class="characters1-container">
                 <div class="Characters Pic">
-                  <img src="/img/Magefront.png" width="400" height="800" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <img src="/img/Magefront.png" width="400" height="800" alt="Generic placeholder image">
                   <div class="text">Mage</div>
                 </div>
 
                 <div class="Characters Pic">
-                  <img src="/img/MageSide.png" width="400" height="800" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <img src="/img/MageSide.png" width="400" height="800" alt="Generic placeholder image">
                   <div class="text">Mage</div>
                 </div>
 
                  <div class="Characters Pic">
-                  <img src="/img/MageBack.png" width="400" height="800" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <img src="/img/MageBack.png" width="400" height="800" alt="Generic placeholder image">
                   <div class="text">Mage</div>
                 </div>
 
@@ -325,17 +325,17 @@
         <div class="col-md-5">
           <div class="characters2-container">
                 <div class="Characters2 Pic">
-                  <img src="/img/ArcherFront.png" style="width: 100%"  class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <img src="/img/ArcherFront.png" style="width: 100%" alt="Generic placeholder image">
                   <div class="text">Archer</div>
                 </div>
 
                 <div class="Characters2 Pic">
-                  <img src="/img/ArcherSide.png" style="width: 100%"  class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <img src="/img/ArcherSide.png" style="width: 100%" alt="Generic placeholder image">
                   <div class="text">Archer</div>
                 </div>
 
                  <div class="Characters2 Pic">
-                  <img src="/img/ArcherBack.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <img src="/img/ArcherBack.png" style="width: 100%" alt="Generic placeholder image">
                   <div class="text">Archer</div>
                 </div>
 
@@ -381,21 +381,21 @@
          }
 
        </script>
-       <br>
+       <br> <br>
        <div class="col-md-5">
           <div class="characters3-container">
                 <div class="Characters3 Pic">
-                  <img src="/img/knightFront.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <img src="/img/knightFront.png" style="width: 100%" alt="Generic placeholder image">
                   <div class="text">Knight</div>
                 </div>
 
                 <div class="Characters3 Pic">
-                  <img src="/img/knightSide.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <img src="/img/knightSide.png" style="width: 100%" alt="Generic placeholder image">
                   <div class="text">Knight</div>
                 </div>
 
                  <div class="Characters3 Pic">
-                  <img src="/img/knightBack.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <img src="/img/knightBack.png" style="width: 100%" alt="Generic placeholder image">
                   <div class="text">Knight</div>
                 </div>
 
@@ -438,6 +438,67 @@
                 }
                 pic1[slide2-1].style.display = "block";
                 circles2[slide2-1].className += " act2";
+           }
+
+         </script>
+
+
+         <div class="col-md-5">
+          <div class="characters4-container">
+                <div class="Characters4 Pic">
+                  <img src="/img/tank.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <div class="text">Tank</div>
+                </div>
+
+                <div class="Characters4 Pic">
+                  <img src="/img/tank1.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <div class="text">Tank</div>
+                </div>
+
+                 <div class="Characters4 Pic">
+                  <img src="/img/tank2.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <div class="text">Tank</div>
+                </div>
+
+                <a class="last3"   onclick="pSlides3(-1)">&#10094;</a>
+                <a class="change3" onclick="pSlides3(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align: center">
+              <span class="circle3" onclick="curSlide3(1)"> </span>
+              <span class="circle3" onclick="curSlide3(2)"></span>
+              <span class="circle3" onclick="curSlide3(3)"></span>
+          </div>
+        </div>
+
+        <script>
+           var slide3 = 1;
+           Characters4(slide3);
+
+           function pSlides3(n) {
+            Characters4(slide3 += n);
+           }
+
+           function curSlide3(n) {
+              Characters4(slide3 = n)
+           }
+
+           function Characters4(n) {
+             var i;
+             var picT = document.getElementsByClassName("Characters4");
+             var circles3 = document.getElementsByClassName("circle3");
+             if(n > picT.length) {slide3 = 1}
+              if(n < 1) {slide3 = picT.length}
+
+                for(i = 0; i < picT.length; i++){
+                  picT[i].style.display = "none";
+                }
+
+                for(i = 0; i < circles3.length; i++){
+                  circles3[i].className = circles3[i].className.replace(" act3", "");
+                }
+                picT[slide2-1].style.display = "block";
+                circles3[slide3-1].className += " act3";
            }
 
          </script>
