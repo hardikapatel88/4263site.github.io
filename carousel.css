@@ -331,14 +331,14 @@ body {
 
 // Characters3 containers
 
- .Characters3{
-   display: none;
-}
-
 .characters3-container{
   max-width: 300px;
   position: relative;
   margin: auto;
+}
+
+ .Characters3{
+   display: none;
 }
 
 .last2, .change2 {
