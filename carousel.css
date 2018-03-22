@@ -209,14 +209,14 @@ body {
 
  // Characters1 containers
 
- .Characters{
-   display: none;
-}
-
 .characters1-container{
   max-width: 300px;
   position: relative;
   margin: auto;
+}
+
+.Characters{
+   display: none;
 }
 
 .last, .change {
@@ -234,7 +234,7 @@ body {
 }
 
 .change {
-  right: 1;
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
 
@@ -270,14 +270,14 @@ body {
 
 // Characters2 containers
 
- .Characters2{
-   display: none;
-}
-
 .characters2-container{
   max-width: 300px;
   position: relative;
   margin: auto;
+}
+
+.Characters2{
+   display: none;
 }
 
 .last1, .change1 {
@@ -295,7 +295,7 @@ body {
 }
 
 .change1 {
-  right: 1;
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
 
