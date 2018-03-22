@@ -207,6 +207,12 @@ body {
 
 
 
+.slide-image  {
+  width: 100%;
+  height: 70vw;
+  
+}
+
  // Characters1 containers
 
 .characters1-container{
