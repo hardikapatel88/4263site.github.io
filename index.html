@@ -288,37 +288,7 @@
           </div>
         </div>
 
-        <div class="col-md-5">
-          <div class="characters2-container">
-                <div class="Characters2 Pic">
-                  <img src="/img/ArcherFront.png" style="width: 100%" height="600" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
-                  <div class="text" align="left">Archer</div>
-                </div>
-
-                <div class="Characters Pic">
-                  <img src="/img/ArcherSide.png" style="width: 100%" height="600" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
-                  <div class="text" align="left">Archer</div>
-                </div>
-
-                 <div class="Characters Pic">
-                  <img src="/img/ArcherBack.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
-                  <div class="text" align="left">Archer</div>
-                </div>
-
-                <a class="last" onclick="pSlides(-1)">&#10096;</a>
-                <a class="change" onclick="pSlides(1)">&#10097;</a>
-          </div>
-          <div style="text-align: center">
-              <span class="circle" onclick="curSlide(1)"> </span>
-              <span class="circle" onclick="curSlide(2)"></span>
-              <span class="circle" onclick="curSlide(3)"></span>
-          </div>
-        </div>
-
-
-       </div>
-
-       <script>
+        <script>
          var slideI = 1;
          ShowPics(slideI);
 
@@ -349,6 +319,66 @@
          }
 
        </script>
+
+        <div class="col-md-5">
+          <div class="characters2-container">
+                <div class="Characters2 Pic">
+                  <img src="/img/ArcherFront.png" style="width: 100%" height="600" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <div class="text" align="left">Archer</div>
+                </div>
+
+                <div class="Characters Pic">
+                  <img src="/img/ArcherSide.png" style="width: 100%" height="600" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <div class="text" align="left">Archer</div>
+                </div>
+
+                 <div class="Characters Pic">
+                  <img src="/img/ArcherBack.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <div class="text" align="left">Archer</div>
+                </div>
+
+                <a class="last1" onclick="pSlides1(-1)">&#10096;</a>
+                <a class="change1" onclick="pSlides1(1)">&#10097;</a>
+          </div>
+          <div style="text-align: center">
+              <span class="circle1" onclick="curSlide1(1)"> </span>
+              <span class="circle1" onclick="curSlide1(2)"></span>
+              <span class="circle1" onclick="curSlide1(3)"></span>
+          </div>
+        </div>
+       </div>
+       <script>
+         var slide1 = 1;
+         ShowPics1(slide1);
+
+         function pSlides1(n) {
+          ShowPics1(slide1 += n);
+         }
+
+         function curSlide1(n) {
+            ShowPics1(slide1 = n)
+         }
+
+         function ShowPics1(n) {
+           var i;
+           var pic = document.getElementsByClassName("Characters2");
+           var circles1 = document.getElementsByClassName("circle1");
+           if(n > pic.length) {slide1 = 1}
+            if(n < 1) {slide1 = pic.length}
+
+              for(i = 0; i < pic.length; i++){
+                pic[i].style.display = "none";
+              }
+
+              for(i = 0; i < circles1.length; i++){
+                circles1[i].className = circles1[i].className.replace(" act", "");
+              }
+              pic[slide1-1].style.display = "block";
+              circles1[slide1-1].className += " act";
+         }
+
+       </script>
+       
        
       <hr class="featurette-divider">
 
