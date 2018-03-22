@@ -220,6 +220,7 @@
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
+          <br>
           <div style="text-align: center">
               <span class="dot" onclick="currentSlide(1)"> </span>
               <span class="dot" onclick="currentSlide(2)"></span>
@@ -408,6 +409,38 @@
               <span class="circle2" onclick="curSlide2(3)"></span>
           </div>
         </div>
+
+        <script>
+         var slide2 = 1;
+         ShowPics2(slide1);
+
+         function pSlides1(n) {
+          ShowPics2(slide2 += n);
+         }
+
+         function curSlide1(n) {
+            ShowPics2(slide2 = n)
+         }
+
+         function ShowPics1(n) {
+           var i;
+           var pic1 = document.getElementsByClassName("Characters3");
+           var circles2 = document.getElementsByClassName("circle2");
+           if(n > pic1.length) {slide2 = 1}
+            if(n < 1) {slide2 = pic1.length}
+
+              for(i = 0; i < pic1.length; i++){
+                pic1[i].style.display = "none";
+              }
+
+              for(i = 0; i < circles2.length; i++){
+                circles2[i].className = circles2[i].className.replace(" act2", "");
+              }
+              pic2[slide2-1].style.display = "block";
+              circles2[slide2-1].className += " act2";
+         }
+
+       </script>
 
        </div>
        
