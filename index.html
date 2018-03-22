@@ -279,48 +279,11 @@
                   <div class="text" >Mage</div>
                 </div>
 
-                <a class="last" onclick="pSlides(-1)">&#10096;</a>
-                <a class="change" onclick="pSlides(1)">&#10097;</a>
+                <a class="last" onclick="pSlides(-1,0)">&#10096;</a>
+                <a class="change" onclick="pSlides(1,0)">&#10097;</a>
           </div>
           <br>
-          <div style="text-align: center">
-              <span class="circle" onclick="curSlide(1)"> </span>
-              <span class="circle" onclick="curSlide(2)"></span>
-              <span class="circle" onclick="curSlide(3)"></span>
-          </div>
         </div>
-
-        <script>
-         var slideI = 1;
-         ShowPics(slideI);
-
-         function pSlides(n) {
-          ShowPics(slideI += n);
-         }
-
-         function curSlide(n) {
-            ShowPics(slideI = n)
-         }
-
-         function ShowPics(n) {
-           var i;
-           var pics = document.getElementsByClassName("Characters");
-           var circles = document.getElementsByClassName("circle");
-           if(n > pics.length) {slideI = 1}
-            if(n < 1) {slideI = pics.length}
-
-              for(i = 0; i < pics.length; i++){
-                pics[i].style.display = "none";
-              }
-
-              for(i = 0; i < circles.length; i++){
-                circles[i].className = circles[i].className.replace(" act", "");
-              }
-              pics[slideI-1].style.display = "block";
-              circles[slideI-1].className += " act";
-         }
-
-       </script>
 
         <div class="col-md-5">
           <div class="characters2-container">
@@ -339,49 +302,13 @@
                   <div class="text">Archer</div>
                 </div>
 
-                <a class="last1" onclick="pSlides1(-1)">&#10096;</a>
-                <a class="change1" onclick="pSlides1(1)">&#10097;</a>
+                <a class="last" onclick="pSlides(-1,1)">&#10096;</a>
+                <a class="change" onclick="pSlides(1,1)">&#10097;</a>
           </div>
           <br>
-          <div style="text-align: center">
-              <span class="circle1" onclick="curSlide1(1)"> </span>
-              <span class="circle1" onclick="curSlide1(2)"></span>
-              <span class="circle1" onclick="curSlide1(3)"></span>
-          </div>
         </div>
 
-        <script>
-         var slide1 = 1;
-         ShowPics1(slide1);
-
-         function pSlides1(n) {
-          ShowPics1(slide1 += n);
-         }
-
-         function curSlide1(n) {
-            ShowPics1(slide1 = n)
-         }
-
-         function ShowPics1(n) {
-           var i;
-           var pic = document.getElementsByClassName("Characters2");
-           var circles1 = document.getElementsByClassName("circle1");
-           if(n > pic.length) {slide1 = 1}
-            if(n < 1) {slide1 = pic.length}
-
-              for(i = 0; i < pic.length; i++){
-                pic[i].style.display = "none";
-              }
-
-              for(i = 0; i < circles1.length; i++){
-                circles1[i].className = circles1[i].className.replace(" act1", "");
-              }
-              pic[slide1-1].style.display = "block";
-              circles1[slide1-1].className += " act1";
-         }
-
-       </script>
-
+       <br>
        <div class="col-md-5">
           <div class="characters3-container">
                 <div class="Characters3 Pic">
@@ -399,45 +326,34 @@
                   <div class="text">Knight</div>
                 </div>
 
-                <a class="last2" onclick="pSlides2(-1)">&#10096;</a>
-                <a class="change2" onclick="pSlides2(1)">&#10097;</a>
-          </div>
-          <br>
-          <div style="text-align: center">
-              <span class="circle2" onclick="curSlide2(1)"> </span>
-              <span class="circle2" onclick="curSlide2(2)"></span>
-              <span class="circle2" onclick="curSlide2(3)"></span>
+                <a class="last" onclick="pSlides(-1,2)">&#10096;</a>
+                <a class="change" onclick="pSlides(1,2)">&#10097;</a>
           </div>
         </div>
 
         <script>
-           var slide2 = 1;
-           ShowPics2(slide2);
+           var slideI = [1,1];
+           var slideId = ["Characters", "Characters2", "Characters3"];
+           ShowPics(1,0);
+           ShowPics(1,1);
+           ShowPics(1,2);
 
-           function pSlides2(n) {
-            ShowPics2(slide2 += n);
+           function pSlides(n, no) {
+            ShowPics(slideI[no] += n, no);
            }
 
-           function curSlide2(n) {
-              ShowPics2(slide2 = n)
-           }
-
-           function ShowPics2(n) {
+           function ShowPics(n, no) {
              var i;
-             var pic1 = document.getElementsByClassName("Characters3");
-             var circles2 = document.getElementsByClassName("circle2");
-             if(n > pic1.length) {slide2 = 1}
-              if(n < 1) {slide2 = pic1.length}
+             var pic = document.getElementsByClassName("slideId[no]");
+            
+             if(n > pic.length) {slideI[no] = 2}
+              if(n < 2) {slideI = pic1.length}
 
-                for(i = 0; i < pic1.length; i++){
-                  pic1[i].style.display = "none";
+                for(i = 0; i < pic.length; i++){
+                  pic[i].style.display = "none";
                 }
 
-                for(i = 0; i < circles2.length; i++){
-                  circles2[i].className = circles2[i].className.replace(" act2", "");
-                }
-                pic1[slide2-1].style.display = "block";
-                circles2[slide2-1].className += " act2";
+                pic[slideI[no]-2].style.display = "block";
            }
 
          </script>
