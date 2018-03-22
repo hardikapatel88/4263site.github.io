@@ -270,10 +270,12 @@
 
                 <div class="Characters Pic">
                   <img src="/img/side.png" style="width: 100%" height="600" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <div class="text">Mage</div>
                 </div>
 
                  <div class="Characters Pic">
                   <img src="/img/back.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
+                  <div class="text">Mage</div>
                 </div>
 
                 <a class="last" onclick="pSlides(-1)">&#10096;</a>
@@ -311,10 +313,10 @@
               }
 
               for(i = 0; i < circles.length; i++){
-                circles[i].className = circles[i].className.replace(" active", "");
+                circles[i].className = circles[i].className.replace(" act", "");
               }
               pics[slideI-1].style.display = "block";
-              circles[slideI-1].className += " active";
+              circles[slideI-1].className += " act";
          }
 
        </script>
