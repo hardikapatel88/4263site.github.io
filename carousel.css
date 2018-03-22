@@ -213,7 +213,7 @@ body {
    display: none;
 }
 
-.characters1-container{
+.characters-container{
   max-width: 300px;
   position: relative;
   margin: auto;
