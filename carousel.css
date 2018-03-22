@@ -135,7 +135,7 @@ body {
 
 .featurette-image  {
   width: 100%;
-  height: 50vw;
+  height: 30vw;
   
 }
 
@@ -216,7 +216,7 @@ body {
  // Characters1 containers
 
 .characters1-container{
-  max-width: 300px;
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
@@ -277,7 +277,7 @@ body {
 // Characters2 containers
 
 .characters2-container{
-  max-width: 300px;
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
@@ -338,7 +338,7 @@ body {
 // Characters3 containers
 
 .characters3-container {
-  max-width: 300px;
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
@@ -388,7 +388,7 @@ body {
 // Characters4 containers
 
 .characters4-container {
-  max-width: 300px;
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
