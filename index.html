@@ -261,7 +261,7 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row">
         <div class="col-md-5">
           <div class="characters1-container">
                 <div class="Characters Pic">
@@ -409,6 +409,30 @@
               <span class="circle" onclick="curSlide(3)"></span>
           </div>
         </div>
+
+        <script type="text/javascript">
+          var slideI = [1, 2];
+          var slideID = ["Characters", "Characters2", "Characters3"];
+          showSlides(1,0);
+          showSlides(1,1);
+          showSlides(1,2);
+
+          function pSlides(n, no){
+            showSlides(slideI[no] += n, no);
+          }
+
+          function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideID[no]);
+            if(n > x.length) {slideI[no] = 1}
+            if(n < 1) {slideI[no] = x.length}
+            for (i = 0; i < x.length; i++){
+                x[i].style.display = "none";
+            } 
+            x[slideI[no]-1].style.display = "block";
+            
+          }
+        </script>
 <!--
         <script>
            var slide2 = 1;
