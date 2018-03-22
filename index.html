@@ -411,36 +411,36 @@
         </div>
 
         <script>
-         var slide2 = 1;
-         ShowPics2(slide1);
+           var slide2 = 1;
+           ShowPics2(slide2);
 
-         function pSlides1(n) {
-          ShowPics2(slide2 += n);
-         }
+           function pSlides2(n) {
+            ShowPics2(slide2 += n);
+           }
 
-         function curSlide1(n) {
-            ShowPics2(slide2 = n)
-         }
+           function curSlide2(n) {
+              ShowPics2(slide2 = n)
+           }
 
-         function ShowPics1(n) {
-           var i;
-           var pic1 = document.getElementsByClassName("Characters3");
-           var circles2 = document.getElementsByClassName("circle2");
-           if(n > pic1.length) {slide2 = 1}
-            if(n < 1) {slide2 = pic1.length}
+           function ShowPics2(n) {
+             var i;
+             var pic1 = document.getElementsByClassName("Characters3");
+             var circles2 = document.getElementsByClassName("circle2");
+             if(n > pic1.length) {slide2 = 1}
+              if(n < 1) {slide2 = pic1.length}
 
-              for(i = 0; i < pic1.length; i++){
-                pic1[i].style.display = "none";
-              }
+                for(i = 0; i < pic1.length; i++){
+                  pic1[i].style.display = "none";
+                }
 
-              for(i = 0; i < circles2.length; i++){
-                circles2[i].className = circles2[i].className.replace(" act2", "");
-              }
-              pic2[slide2-1].style.display = "block";
-              circles2[slide2-1].className += " act2";
-         }
+                for(i = 0; i < circles2.length; i++){
+                  circles2[i].className = circles2[i].className.replace(" act2", "");
+                }
+                pic2[slide2-1].style.display = "block";
+                circles2[slide2-1].className += " act2";
+           }
 
-       </script>
+         </script>
 
        </div>
        
