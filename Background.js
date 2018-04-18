@@ -4,11 +4,11 @@
 //var HEIGHT_SCREEN = 1080; //Change this by your value
 
 var circles = [];
-var canvas;
 const SIZE_CIRCLE = 60; //You can tweek the result by change the number of line / column / space
 const SPACE_BETWEEN = 10
 const NUMBER_LINE = 6;
 const NUMBER_COLUMN = 6;
+
 const colors = [
   {
       backgroundColor:"#338275",
@@ -27,6 +27,7 @@ const colors = [
 var backgroundColor = "#C4C4C4"
 
 function setup() {
+  var canvas;
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(1,1);
   canvas.style('z-index', '-1');
