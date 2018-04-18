@@ -1,71 +1,51 @@
- 
 
-//var WIDTH_SCREEN = 1920; //Change this by your value
-//var HEIGHT_SCREEN = 1080; //Change this by your value
 
-var circles = [];
+var ratio = 1.78125;
 var canvas;
-const SIZE_CIRCLE = 60; //You can tweek the result by change the number of line / column / space
-const SPACE_BETWEEN = 10
-const NUMBER_LINE = 6;
-const NUMBER_COLUMN = 6;
-const colors = [
-  {
-      backgroundColor:"#338275",
-      circlesColors:["#1B515E", "#88B990", "#ABCD9E"]
-  },
-  {
-      backgroundColor:"#456672",
-      circlesColors:["#314357", "#E3B587", "#C98C70"]
-  },
-  {
-      backgroundColor:"#584F84",
-      circlesColors:["#38486F", "#876A96", "#D7C1E0"]
-  },
-
-]
-var backgroundColor = "#C4C4C4"
-
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
   canvas.style('z-index', '-1');
-  var allWidth = (width - (NUMBER_COLUMN * SIZE_CIRCLE)) / 2;
-  var allHeight = (height - ((NUMBER_LINE * SIZE_CIRCLE) + (NUMBER_LINE * SPACE_BETWEEN)-SPACE_BETWEEN)) /2;
+  noStroke();
+}
 
-  var offset = SIZE_CIRCLE/2;
-  var randomColor = colors[Math.floor(random(0, colors.length))];
+function draw() {
+  background(20);
 
-  backgroundColor = randomColor.backgroundColor;
-  for(var i = 0; i < NUMBER_LINE; i++){
-    for(var j = 0; j < NUMBER_COLUMN; j++){
-      var spaceB = j < NUMBER_LINE ? SPACE_BETWEEN*i : 0;
-      var randomColorCircle = randomColor.circlesColors[Math.floor(random(0, randomColor.circlesColors.length))]
-      if(j%2 == 0){
-        var temp = new Vehicle(allWidth + SIZE_CIRCLE/2 + j*SIZE_CIRCLE, allHeight +i*SIZE_CIRCLE + (SIZE_CIRCLE/2)+offset/2+spaceB, randomColorCircle)
+  var size = 64;
+  var offset = size * ratio;
+
+  for (var x = 0; x <= width + size; x += size * 2) {
+    for (var y = 0; y <= height + offset; y += offset) {
+      var x0 = 0;
+      if (y % (offset * 2) == 0) {
+        fill(74,189,172);
+        x0 = size;
       } else {
-        var temp = new Vehicle(allWidth + SIZE_CIRCLE/2 + j*SIZE_CIRCLE, allHeight +i*SIZE_CIRCLE + (SIZE_CIRCLE/2)-(offset/2)+spaceB, randomColorCircle)
+        fill(252,74,26);
+        xo = 0;
       }
-      circles.push(temp)
+
+      makeHex(x + x0, y, size);
     }
   }
 }
 
-function draw(){
-  background(backgroundColor);
-  circles.forEach((c)=>{
-    c.display();
-  })
+function makeHex(a, b, size) {
+  var diff =
+    sin(radians(dist(a, b, width / 2, height / 2) - frameCount)) * size / ratio;
+  beginShape();
+  for (var i = 0; i < 6; i++) {
+    var angle = PI * i / 3;
+    vertex(
+      a + sin(angle) * (size / ratio - diff),
+      b + cos(angle) * (size / ratio - diff)
+    );
+  }
+  endShape(CLOSE);
 }
 
-function Vehicle(x, y, color){
-  this.pos = createVector(x, y);
-  this.color = color;
-
-  this.display = function(){
-    fill(this.color);
-    noStroke();
-    ellipse(this.pos.x, this.pos.y, SIZE_CIRCLE, SIZE_CIRCLE);
-  }
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
