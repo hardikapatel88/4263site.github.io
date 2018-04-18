@@ -1,7 +1,7 @@
  
 
-//var WIDTH_SCREEN = 1920; //Change this by your value
-//var HEIGHT_SCREEN = 1080; //Change this by your value
+var WIDTH_SCREEN = 1920; //Change this by your value
+var HEIGHT_SCREEN = 1080; //Change this by your value
 
 var circles = [];
 const SIZE_CIRCLE = 60; //You can tweek the result by change the number of line / column / space
@@ -27,12 +27,12 @@ const colors = [
 var backgroundColor = "#C4C4C4"
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+    resizeCanvas(WIDTH_SCREEN, HEIGHT_SCREEN);
 }
 
 function setup() {
   var canvas;
-  canvas = createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(WIDTH_SCREEN, HEIGHT_SCREEN);
   canvas.position(100,300);
   canvas.style('z-index', '-1');
   var allWidth = (width - (NUMBER_COLUMN * SIZE_CIRCLE)) / 2;
