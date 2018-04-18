@@ -29,7 +29,7 @@ var backgroundColor = "#C4C4C4"
 function setup() {
   var canvas;
   canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(200,200);
+  //canvas.position(200,200);
   canvas.parent('background-holder');
   //canvas.style('z-index', '-1');
   var allWidth = (width - (NUMBER_COLUMN * SIZE_CIRCLE)) / 2;
