@@ -31,6 +31,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   //canvas.position(100,100);
   canvas.parent('background-holder');
+  background(backgroundColor);
   //canvas.style('z-index', '-1');
   var allWidth = (width - (NUMBER_COLUMN * SIZE_CIRCLE)) / 2;
   var allHeight = (height - ((NUMBER_LINE * SIZE_CIRCLE) + (NUMBER_LINE * SPACE_BETWEEN)-SPACE_BETWEEN)) /2;
@@ -54,7 +55,7 @@ function setup() {
 }
 
 function draw(){
-  background(backgroundColor);
+  //background(backgroundColor);
   circles.forEach((c)=>{
     c.display();
   })
