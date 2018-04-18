@@ -30,7 +30,7 @@ function setup() {
   var canvas;
   canvas = createCanvas(windowWidth, windowHeight);
   //canvas.position(100,100);
-  canvas.parent('row featurette');
+  canvas.parent('row');
   canvas.style('z-index', '-1');
   var allWidth = (width - (NUMBER_COLUMN * SIZE_CIRCLE)) / 2;
   var allHeight = (height - ((NUMBER_LINE * SIZE_CIRCLE) + (NUMBER_LINE * SPACE_BETWEEN)-SPACE_BETWEEN)) /2;
