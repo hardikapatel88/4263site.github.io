@@ -33,7 +33,7 @@ function windowResized() {
 function setup() {
   var canvas;
   canvas = createCanvas(WIDTH_SCREEN, HEIGHT_SCREEN);
-  canvas.position(500,100);
+  canvas.position(100,500);
   //canvas.style('z-index', '-1');
   var allWidth = (width - (NUMBER_COLUMN * SIZE_CIRCLE)) / 2;
   var allHeight = (height - ((NUMBER_LINE * SIZE_CIRCLE) + (NUMBER_LINE * SPACE_BETWEEN)-SPACE_BETWEEN)) /2;
