@@ -1,12 +1,12 @@
  
 
-var WIDTH_SCREEN = 1120; //Change this by your value
+var WIDTH_SCREEN = 1220; //Change this by your value
 var HEIGHT_SCREEN = 5080; //Change this by your value
 
 var square = [];
 const SIZE_RECT = 60; //You can tweek the result by change the number of line / column / space
 const SPACE_BETWEEN = 10
-const NUMBER_LINE = 6;
+const NUMBER_LINE = 4;
 const NUMBER_COLUMN = 6;
 
 const colors = [
