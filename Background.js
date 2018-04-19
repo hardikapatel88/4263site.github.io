@@ -70,7 +70,7 @@ function Vehicle(x, y, color){
   this.display = function(){
     fill(this.color);
     noStroke();
-    ellipse(this.pos.x, this.pos.y, SIZE_RECT, SIZE_RECT);
+    rect(this.pos.x, this.pos.y, SIZE_RECT, SIZE_RECT);
   }
 }
 
