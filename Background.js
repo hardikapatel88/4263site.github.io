@@ -35,10 +35,10 @@ function setup() {
   canvas = createCanvas(WIDTH_SCREEN, HEIGHT_SCREEN);
   canvas.position(50,500);
   //canvas.style('z-index', '-1');
-  var allWidth = (width - (NUMBER_COLUMN * SIZE_CIRCLE)) / 2;
-  var allHeight = (height - ((NUMBER_LINE * SIZE_CIRCLE) + (NUMBER_LINE * SPACE_BETWEEN)-SPACE_BETWEEN)) /2;
+  var allWidth = (width - (NUMBER_COLUMN * SIZE_RECT)) / 2;
+  var allHeight = (height - ((NUMBER_LINE * SIZE_RECT) + (NUMBER_LINE * SPACE_BETWEEN)-SPACE_BETWEEN)) /2;
 
-  var offset = SIZE_CIRCLE/2;
+  var offset = SIZE_RECT/2;
   var randomColor = colors[Math.floor(random(0, colors.length))];
 
   backgroundColor = randomColor.backgroundColor;
@@ -47,9 +47,9 @@ function setup() {
       var spaceB = j < NUMBER_LINE ? SPACE_BETWEEN*i : 0;
       var randomColorCircle = randomColor.circlesColors[Math.floor(random(0, randomColor.circlesColors.length))]
       if(j%2 == 0){
-        var temp = new Vehicle(allWidth + SIZE_CIRCLE/2 + j*SIZE_CIRCLE, allHeight +i*SIZE_CIRCLE + (SIZE_CIRCLE/2)+offset/2+spaceB, randomColorCircle)
+        var temp = new Vehicle(allWidth + SIZE_RECT/2 + j*SIZE_RECT, allHeight +i*SIZE_RECT + (SIZE_RECT/2)+offset/2+spaceB, randomColorCircle)
       } else {
-        var temp = new Vehicle(allWidth + SIZE_CIRCLE/2 + j*SIZE_CIRCLE, allHeight +i*SIZE_CIRCLE + (SIZE_CIRCLE/2)-(offset/2)+spaceB, randomColorCircle)
+        var temp = new Vehicle(allWidth + SIZE_RECT/2 + j*SIZE_RECT, allHeight +i*SIZE_RECT + (SIZE_RECT/2)-(offset/2)+spaceB, randomColorCircle)
       }
       circles.push(temp)
     }
@@ -70,7 +70,7 @@ function Vehicle(x, y, color){
   this.display = function(){
     fill(this.color);
     noStroke();
-    ellipse(this.pos.x, this.pos.y, SIZE_CIRCLE, SIZE_CIRCLE);
+    ellipse(this.pos.x, this.pos.y, SIZE_RECT, SIZE_RECT);
   }
 }
 
