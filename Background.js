@@ -4,7 +4,7 @@ var WIDTH_SCREEN = 1420; //Change this by your value
 var HEIGHT_SCREEN = 1080; //Change this by your value
 
 var circles = [];
-const SIZE_CIRCLE = 60; //You can tweek the result by change the number of line / column / space
+const SIZE_RECT = 60; //You can tweek the result by change the number of line / column / space
 const SPACE_BETWEEN = 10
 const NUMBER_LINE = 6;
 const NUMBER_COLUMN = 6;
@@ -34,7 +34,7 @@ function setup() {
   var canvas;
   canvas = createCanvas(WIDTH_SCREEN, HEIGHT_SCREEN);
   canvas.position(0,500);
-  //canvas.style('z-index', '-1');
+  canvas.style('z-index', '-1');
   var allWidth = (width - (NUMBER_COLUMN * SIZE_RECT)) / 2;
   var allHeight = (height - ((NUMBER_LINE * SIZE_RECT) + (NUMBER_LINE * SPACE_BETWEEN)-SPACE_BETWEEN)) /2;
 
