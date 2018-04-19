@@ -3,7 +3,7 @@
 var WIDTH_SCREEN = 1420; //Change this by your value
 var HEIGHT_SCREEN = 1080; //Change this by your value
 
-var circles = [];
+var square = [];
 const SIZE_RECT = 60; //You can tweek the result by change the number of line / column / space
 const SPACE_BETWEEN = 10
 const NUMBER_LINE = 6;
@@ -51,14 +51,14 @@ function setup() {
       } else {
         var temp = new Vehicle(allWidth + SIZE_RECT/2 + j*SIZE_RECT, allHeight +i*SIZE_RECT + (SIZE_RECT/2)-(offset/2)+spaceB, randomColorCircle)
       }
-      circles.push(temp)
+      square.push(temp)
     }
   }
 }
 
 function draw(){
   background(backgroundColor);
-  circles.forEach((c)=>{
+  square.forEach((c)=>{
     c.display();
   })
 }
