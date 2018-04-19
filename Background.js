@@ -1,7 +1,7 @@
  
 
-var WIDTH_SCREEN = 1420; //Change this by your value
-var HEIGHT_SCREEN = 1080; //Change this by your value
+var WIDTH_SCREEN = 1320; //Change this by your value
+var HEIGHT_SCREEN = 3080; //Change this by your value
 
 var square = [];
 const SIZE_RECT = 60; //You can tweek the result by change the number of line / column / space
