@@ -1,6 +1,6 @@
  
 
-var WIDTH_SCREEN = 1520; //Change this by your value
+var WIDTH_SCREEN = 1420; //Change this by your value
 var HEIGHT_SCREEN = 1080; //Change this by your value
 
 var circles = [];
@@ -33,7 +33,7 @@ function windowResized() {
 function setup() {
   var canvas;
   canvas = createCanvas(WIDTH_SCREEN, HEIGHT_SCREEN);
-  canvas.position(50,500);
+  canvas.position(0,500);
   //canvas.style('z-index', '-1');
   var allWidth = (width - (NUMBER_COLUMN * SIZE_RECT)) / 2;
   var allHeight = (height - ((NUMBER_LINE * SIZE_RECT) + (NUMBER_LINE * SPACE_BETWEEN)-SPACE_BETWEEN)) /2;
