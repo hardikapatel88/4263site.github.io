@@ -1,7 +1,7 @@
  
 
-var WIDTH_SCREEN = 1320; //Change this by your value
-var HEIGHT_SCREEN = 3080; //Change this by your value
+var WIDTH_SCREEN = 1120; //Change this by your value
+var HEIGHT_SCREEN = 5080; //Change this by your value
 
 var square = [];
 const SIZE_RECT = 60; //You can tweek the result by change the number of line / column / space
@@ -33,7 +33,7 @@ function windowResized() {
 function setup() {
   var canvas;
   canvas = createCanvas(WIDTH_SCREEN, HEIGHT_SCREEN);
-  canvas.position(0,500);
+  canvas.position(0,300);
   canvas.style('z-index', '-1');
   var allWidth = (width - (NUMBER_COLUMN * SIZE_RECT)) / 2;
   var allHeight = (height - ((NUMBER_LINE * SIZE_RECT) + (NUMBER_LINE * SPACE_BETWEEN)-SPACE_BETWEEN)) /2;
