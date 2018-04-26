@@ -61,9 +61,17 @@ body{
 .containerP{
   position: absolute;
   left: 200px;
-  top: 550px;
+  top: 500px;
   background-color: transparent;
 }
+
+.containerS{
+  position: absolute;
+  left: 200px;
+  top: 1000px;
+  background-color: transparent;
+}
+
 
 /* Team CSS*/
 
