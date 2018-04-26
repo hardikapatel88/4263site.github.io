@@ -61,7 +61,8 @@ body{
 .containerP{
   position: absolute;
   left: 200px;
-  top: 150px;
+  top: 550px;
+  background-color: transparent;
 }
 
 /* Team CSS*/
