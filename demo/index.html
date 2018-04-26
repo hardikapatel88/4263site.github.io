@@ -58,7 +58,7 @@
       <div id="rowP">
         <div class="col-sm-7" >
           <button id="myBtn">Placement Phase</button>
-          <img src="img/PlacementPhase1.png" alt="PlacementPhase" style="width:100%;">
+          <img src="img/PlacementPhase1.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="1000" height="300">
           <div id="myModal" class="modal">
             <div class="modal-content">
                     <div class="modal-header">
@@ -78,44 +78,20 @@
       </div>
     </div>
 
-    <div class="containerS">
-      <div class="col-sm-7" >
-          <div class="slideshow-container">
-
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="img/PlayPhase1.png" style="width:100%">
-              <div class="text">Caption Text</div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="img/Playphase2.png" style="width:100%">
-              <div class="text">Caption Two</div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="img/PlayPhase3.png" style="width:100%">
-              <div class="text">Caption Three</div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            </div>
-            <br>
-
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-
+    <div class="containerI">
+      <button id="myBtn">Play Phase</button>
+      <div id="rowI">
+        <div id="column" >
+         <img src="img/PlayPhase1.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="500" height="300" class="responsive">
+        </div>
+        <div id="column" >
+         <img src="img/playphase2.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="700" height="300" class="responsive">
+        </div>
+        <div id="column" >
+        <img src="img/PlayPhase3.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="700" height="300" class="responsive">
+        </div>
       </div>
     </div>
-
-</div>
 
 
 
@@ -147,34 +123,6 @@ window.onclick = function(event) {
 }
 </script>
 
-<script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-  }
-</script>
 
 
 
