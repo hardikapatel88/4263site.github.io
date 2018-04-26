@@ -57,8 +57,8 @@
     <div class="containerP">
       <div id="rowP">
         <div class="col-sm-7" >
-          <button id="myBtn">Placement Phase</button>
-          <img src="img/PlacementPhase1.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="1000" height="300">
+          <button id="myBtn" class="click">Placement Phase</button>
+          <img src="img/PlacementPhase1.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="1000" height="300" >
           <div id="myModal" class="modal">
             <div class="modal-content">
                     <div class="modal-header">
@@ -78,59 +78,97 @@
       </div>
     </div>
 
+
+    
+  
+      <button id="Btn" class="click">Play Phase</button>
+
+      <div id="pModal" class="pmodal">
+
+      <!-- Modal content -->
+        <div class="pmodal-content">
+          <div class="pmodal-header">
+            <span class="pclose">&times;</span>
+            <h2>Play Phase</h2>
+          </div>
+          <div class="pmodal-body">
+            <p><br>At the start of the Play Phase, a 3D level is generated from the map you created in the Placement Phase. Enemy grunts are placed through the level for you to fight, and a large boss is placed in the boss room.</p>
+            <p>You can run freely around the generated level to encounter enemies. When you find one, enemies will advance toward you and engage you in hand-to-hand combat. You can punch enemies with a left hook or right hook, or dodge them with a quick evasive roll in any direction you’d like. Enemy grunts are the same size as you and have the same types attacks. However, they have much less stopping power and resilience—their health and damage are reduced since they appear in large numbers.</p>
+            <p>The boss is a hulking animated golem. He will lumber around the boss room until you enter it. Once you enter he will begin to chase after you and if he reaches certain attack ranges he will perform different attacks. His main attack is a simple punch combo. If he gets close enough to you he will unleash a punching attack directly in front of him. His secondary attack is his ground slam. This attack has a 15 second cooldown and a wind up time of about 1 second. After that 1 second wind up time he will begin to slam the ground repeatedly within a certain radius of himself. Every 0.1 seconds the player stays within this radius they will take damage as each slam hits the ground.</p>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      var Modal = document.getElementById('pModal');
+      var pbtn = document.getElementById('Btn');
+      var span = document.getElementsByClassName("pclose")[0];
+      pbtn.onclick = function() {
+        Modal.style.display = "block";
+      }
+      span.onclick = function() {
+        Modal.style.display ="none";
+      }
+      window.onclick = function(event){
+        if(event.target == Modal) {
+          Modal.style.display = "none";
+        }
+      }
+    </script>
+
+
     <div class="containerI">
-      <button id="myBtn">Play Phase</button>
       <div id="rowI">
-        <div id="column" >
-         <img src="img/PlayPhase1.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="500" height="300" class="responsive">
+        <div id="columnI" >
+         <img src="img/PlayPhase1.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="900" height="320" class="responsive">
         </div>
-        <div id="column" >
-         <img src="img/playphase2.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="700" height="300" class="responsive">
+        <div id="columnI" >
+         <img src="img/playphase2.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="900" height="320" class="responsive">
         </div>
-        <div id="column" >
-        <img src="img/PlayPhase3.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="700" height="300" class="responsive">
+        <div id="columnI" >
+        <img src="img/PlayPhase3.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="900" height="320" class="responsive">
         </div>
       </div>
     </div>
 
-
+</div>
 
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+      // Get the modal
+      var modal = document.getElementById('myModal');
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+  
 </script>
 
 
 
-
-
-<!-- scripts -->
+<!-- scripts 
 <script src="../particles.js"></script>
 <script src="js/app.js"></script>
-
+-->
 <!-- stats.js -->
 <script src="js/lib/stats.js"></script>
 <script>
