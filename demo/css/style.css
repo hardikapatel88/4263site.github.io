@@ -152,7 +152,7 @@ body{
 
 #rowI{
   background-color: black;
-  opacity: 0.8;
+  
   padding: 0.20em;
   border: #ccc 2px solid;
   position: absolute;
@@ -170,7 +170,7 @@ body{
 }
 
 #columnI{
-  opacity: 0.8;
+  
     float: left;
     width: 33.33%;
     padding: 10px;
