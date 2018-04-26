@@ -1,510 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../favicon.ico">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="css/style.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <title>Home</title>
+</head>
+<body>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- count particles 
+<div class="count-particles">
+  <span class="js-count-particles"> </span> particles
+</div>
+-->
+<!-- particles.js container -->
+<div id="particles-js" >
+  <div id="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><font color="white">Build-A-Battle </font></a>
+        </div>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+          <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="team.html">Team</a>
+            <a href="https://github.com/hardikapatel88/hardikapatel88.github.io">GitHub</a>
+            </div> 
+          </div>
+  </div>
 
-    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- Custom styles for this template -->
-    /
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
-     <script src="background.js"></script>
+    <div class="container">
+      <div id="row">
+        <div id="column" >
+          <h2>Game PLay</h2>
+          <p>Build-A-Battle’s gameplay consists of two phases: the Placement Phase, during which the playable level is crafted from randomly generated tiles; and the Play Phase, during which the player controls a 3D character and battles enemies throughout the level they created.</p>
+        </div>
+        <div id="column" >
+          <h2>Art Style and Theme</h2>
+          <p>The game is going to have a cyberpunk/futuristic theme akin to movies like Robocop or Blade runner, Characterized by dark, grimy streets, lots of neon, holograms, etc. The art style will compose of a semi real and semi animated style. It will be set in an isometric world view. With that in mind it will be implemented  a 3d environment. Both the models and environment will be sculpted with Zbrush and Maya.</p>
+        </div>
+        <div id="column" >
+          <h2>Goals</h2>
+          <p>we have several ideas that we might warrant testing once we have a working prototype. One of such idea is that, after a set number of rounds, the game ends and the player with the higher score is declared the winner. The score would be determined by the total gold and experience accumulated by each player throughout the game.
+                  Another idea floating around the team is to have a final player-versus-player round. During the Play phase of the final round, the players would brawl in a battle royale using the characters they’ve molded over the course of the previous rounds.</p>
+        </div>
+      </div>
+    </div>
    
-    <script type="text/javascript">
-            var DISABLE_NAV_MORE =1;
-          function initFlyouts(){
-             initPublishedFlyoutMenus(
-                  [
-                      {"id":"1427","title":"Home","url":"index.html"},
-                      {"id":"88","title":"Contact","url":"contact.html"},
-                      {"id":"89","title":"Team","url":"team.html"}],
-                      "1427",
-                      '',
-                      'active',
-                      false,
-                      {"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
-                        {}
-              )
-           }
-    </script>
+    <div class="containerP">
+      <div id="rowP">
+        <div class="col-sm-7" >
+          <button id="myBtn" class="click">Placement Phase</button>
+          <img src="img/PlacementPhase1.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="1000" height="300" >
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">&times;</span>
+                      <h2>Placement Phase</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>When the game starts out you are looking at a grid, in the center is a simple 1x1 room. This room is where you will start out at. Below that room will be a large 3x3 room that is completely open and only has one door facing the default room. This is the bosses room. </p>
+                        
+                        <p>Your hand will be displayed at the bottom of the screen and will consist of seven room tiles of various sizes and layouts starting from a 1x1 room all the way up to a 3x3 room. Each of these room tiles will have openings along the walls, these are the doors. You can place a room tile down on the grid given a few constraints. The new tile must match up with at least one existing door and the new tile cannot overlap any previously placed tiles. </p>
 
-  </head>
-<!-- NAVBAR
-================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">  Build-A-Battle </a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li id="active"><a href="index.html">Home</a></li>
-               <!-- <li><a href="#about">About</a></li> -->
-                <li id="pg88"><a href="contact.html">Contact</a></li>
-                <li id="pg89"><a href="team.html">Team</a></li>
-                <!-- <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul> 
-                </li> -->
-              </ul>
+                        <p>Once a room tile is placed you will automatically draw another room tile to fill that spot. The deck holds 50 rooms in total and you can keep placing rooms until you run out of open doors or you have placed all 50 rooms. Once that happens, or at any time before that if you want, you can press “Switch to play” to spawn in to the map created from your tile placements.</p>
+                    </div>
             </div>
           </div>
-        </nav>
-
+        </div>
       </div>
     </div>
 
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-            <div class="container">
-            <div class="carousel-caption">
-              <h1>Game PLay</h1>
-              <p align="left"5>Our game consists of three phases: Placement, Prep and Play. These phases will be repeated for a certain amount of rounds or until and objective is completed.   <br>                  
-              </p>
-              <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
-            </div>
-         </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Art Style and Theme</h1>
-              <p align="left">The game is going to have a cyberpunk/futuristic theme akin to movies like Robocop or Blade runner, Characterized by dark, grimy streets, lots of neon, holograms, etc. The art style will compose of a semi real and semi animated style. It will be set in an isometric world view. With that in mind it will be implemented  a 3d environment. Both the models and environment will be sculpted with Zbrush and Maya.</p>
-              <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>-->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Goals</h1>
-              <p align="left">we have several ideas that we might warrant testing once we have a working prototype. One of such idea is that, after a set number of rounds, the game ends and the player with the higher score is declared the winner. The score would be determined by the total gold and experience accumulated by each player throughout the game.
-              Another idea floating around the team is to have a final player-versus-player round. During the Play phase of the final round, the players would brawl in a battle royale using the characters they’ve molded over the course of the previous rounds. </p>
-              <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider" >
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Placement Phase</h2>
-          <p class ="lead">  At the beginning of the phase, each player draws cards to fill their hand. The map then starts off with a single starting square, where the square is the default starting location for each player. The starting square is 1x1, with all four sides having open doors. He starting tile cannot be owned, modified, or enhanced by any player. The players then take turns, with each player placing a single tile on the board. The tile being placed must be matched with a door on the previous tile, and each tile placed is only viewable by the original player and not viewable to other players. There is a time limit to place a tile, if a tile is not placed by the player in the allotted time, then a random tile from their hand will be placed. Once all tiles are placed, then the prep phase begins.</p>
-        </div>
-        <div class="col-md-5">
-          <img src="/img/PlacementPhase1.png" height="700" width="600" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Prep Phase</h2>
-          <p class="lead"> During the prep phase, players are acting in real time, where upgrades and effects can be purchased. Upgrades can only be purchased for tiles that a player has placed and effects can be purchased for any tile on the map. Some effects can move tiles, in the case where a tile is moved by one player and another player places an effect/upgrade to the tile during the same prep phase the second players effect/upgrade will act on the tile that occupies that location at the end of all moves for that prep phase. In the case that two players move the same tile, either All tile moves are fully processed at the end of the prep phase and in player order or Tile swaps are processed in real time so whoever moves first. Once the prep phase is complete, then the game starts.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img src="/img/PrepPhase.png" height="700" width="600" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Play Phase</h2>
-            <p class="lead">In this phase, all players are dropped into their starting location (this may be the default or the starting location moved by an effect. The players then fight their way through the Dungeon they created in real time. When a monster is encountered, fighting a monster earns the players XP and gold. If two or more players damage a monster, then the XOP and gold is split based on the damage done. </p>
-        </div>
-        
-        <div class="col-md-5">
-          <div class="slideshow-container">
-                <div class="PlayPhase Pics">
-                  <img src="/img/PlayPhase1.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
-                </div>
-
-                <div class="PlayPhase Pics">
-                  <img src="/img/playphase2.png" style="width: 100%" class="featurette-image img-responsive center-block" alt="Generic placeholder image">
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-          <div style="text-align: center">
-              <span class="dot" onclick="currentSlide(1)"> </span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-          </div>
-        </div>
-
-      </div>
-
-      <script >
-        var slideIndex = 1;
-              PlayPhase(slideIndex);
-              function plusSlides(n) {
-                PlayPhase(slideIndex += n);
-              }
-
-              function currentSlide(n) {
-                PlayPhase(slideIndex = n);
-              }
-
-              function PlayPhase(n) {
-                var i;
-                var slides = document.getElementsByClassName("PlayPhase");
-                var dots = document.getElementsByClassName("dot");
-                if(n > slides.length) {slideIndex = 1}
-                if(n < 1) {slideIndex = slides.length}
-                  
-                  for(i = 0; i < slides.length; i++){
-                    slides[i].style.display = "none";
-                  }
-
-                  for(i = 0; i < dots.length; i++){
-                    dots[i].className = dots[i].className.replace("active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";
-                  dots[slideIndex-1].className += " active";
-              }
-      </script>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-          <div class="characters1-container">
-                <div class="Characters Pic">
-                  <img src="/img/Magefront.png" style="width: 100%" class="slide-image" alt="Generic placeholder image">
-                  <div class="text">Mage</div>
-                </div>
-
-                <div class="Characters Pic">
-                  <img src="/img/mageSide.png" style="width: 100%" hight="500" class="slide-image" alt="Generic placeholder image">
-                  <div class="text">Mage</div>
-                </div>
-
-                 <div class="Characters Pic">
-                  <img src="/img/MageBack.png" style="width: 100%" class="slide-image" alt="Generic placeholder image">
-                  <div class="text">Mage</div>
-                </div>
-
-                <a class="last"   onclick="pSlides(-1)">&#10094;</a>
-                <a class="change" onclick="pSlides(1)">&#10095;</a>
-          </div>
-          <br>
-          <div style="text-align: center">
-              <span class="circle" onclick="curSlide(1)"> </span>
-              <span class="circle" onclick="curSlide(2)"></span>
-              <span class="circle" onclick="curSlide(3)"></span>
-          </div>
-        </div>
-
-        <script>
-         var slideI = 1;
-         Characters(slideI);
-
-         function pSlides(n) {
-          Characters(slideI += n);
-         }
-
-         function curSlide(n) {
-            Characters(slideI = n)
-         }
-
-         function Characters(n) {
-           var i;
-           var pics = document.getElementsByClassName("Characters");
-           var circles = document.getElementsByClassName("circle");
-           if(n > pics.length) {slideI = 1}
-            if(n < 1) {slideI = pics.length}
-
-              for(i = 0; i < pics.length; i++){
-                pics[i].style.display = "none";
-              }
-
-              for(i = 0; i < circles.length; i++){
-                circles[i].className = circles[i].className.replace(" act", "");
-              }
-              pics[slideI-1].style.display = "block";
-              circles[slideI-1].className += " act";
-         }
-
-       </script>
-
-        <div class="col-md-5">
-          <div class="characters2-container">
-                <div class="Characters2 Pic">
-                  <img src="/img/ArcherFront.png" style="width: 100%" class="slide-image" alt="Generic placeholder image">
-                  <div class="text">Archer</div>
-                </div>
-
-                <div class="Characters2 Pic">
-                  <img src="/img/ArcherSide.png" style="width: 100%" class="slide-image" alt="Generic placeholder image">
-                  <div class="text">Archer</div>
-                </div>
-
-                 <div class="Characters2 Pic">
-                  <img src="/img/ArcherBack.png" style="width: 100%" class="slide-image" alt="Generic placeholder image">
-                  <div class="text">Archer</div>
-                </div>
-
-                <a class="last1" onclick="pSlides1(-1)">&#10094;</a>
-                <a class="change1" onclick="pSlides1(1)">&#10095;</a>
-          </div>
-          <br>
-          <div style="text-align: center">
-              <span class="circle1" onclick="curSlide1(1)"> </span>
-              <span class="circle1" onclick="curSlide1(2)"></span>
-              <span class="circle1" onclick="curSlide1(3)"></span>
-          </div>
-        </div>
-
-        <script>
-         var slide1 = 1;
-         ShowPics1(slide1);
-
-         function pSlides1(n) {
-          ShowPics1(slide1 += n);
-         }
-
-         function curSlide1(n) {
-            ShowPics1(slide1 = n)
-         }
-
-         function ShowPics1(n) {
-           var i;
-           var pic = document.getElementsByClassName("Characters2");
-           var circles1 = document.getElementsByClassName("circle1");
-           if(n > pic.length) {slide1 = 1}
-            if(n < 1) {slide1 = pic.length}
-
-              for(i = 0; i < pic.length; i++){
-                pic[i].style.display = "none";
-              }
-
-              for(i = 0; i < circles1.length; i++){
-                circles1[i].className = circles1[i].className.replace(" act1", "");
-              }
-              pic[slide1-1].style.display = "block";
-              circles1[slide1-1].className += " act1";
-         }
-
-       </script>
-      
-       <div class="col-md-5">
-          <div class="characters3-container">
-                <div class="Characters3 Pic">
-                  <img src="/img/knightFront.png" style="width: 100%" class="slide-image" alt="Generic placeholder image">
-                  <div class="text">Knight</div>
-                </div>
-
-                <div class="Characters3 Pic">
-                  <img src="/img/knightSide.png" style="width: 100%" class="slide-image" alt="Generic placeholder image">
-                  <div class="text">Knight</div>
-                </div>
-
-                 <div class="Characters3 Pic">
-                  <img src="/img/knightBack.png" style="width: 100%" class="slide-image" alt="Generic placeholder image">
-                  <div class="text">Knight</div>
-                </div>
-
-                <a class="last2"   onclick="pSlides2(-1)">&#10094;</a>
-                <a class="change2" onclick="pSlides2(1)">&#10095;</a>
-          </div>
-          <br>
-          <div style="text-align: center">
-              <span class="circle2" onclick="curSlide2(1)"> </span>
-              <span class="circle2" onclick="curSlide2(2)"></span>
-              <span class="circle2" onclick="curSlide2(3)"></span>
-          </div>
-        </div>
-
-        <script>
-           var slide2 = 1;
-           Characters3(slide2);
-
-           function pSlides2(n) {
-            Characters3(slide2 += n);
-           }
-
-           function curSlide2(n) {
-              Characters3(slide2 = n)
-           }
-
-           function Characters3(n) {
-             var i;
-             var pic1 = document.getElementsByClassName("Characters3");
-             var circles2 = document.getElementsByClassName("circle2");
-             if(n > pic1.length) {slide2 = 1}
-              if(n < 1) {slide2 = pic1.length}
-
-                for(i = 0; i < pic1.length; i++){
-                  pic1[i].style.display = "none";
-                }
-
-                for(i = 0; i < circles2.length; i++){
-                  circles2[i].className = circles2[i].className.replace(" act2", "");
-                }
-                pic1[slide2-1].style.display = "block";
-                circles2[slide2-1].className += " act2";
-           }
-
-         </script>
-
-         <!--
-         <div class="col-md-5">
-          <div class="characters4-container">
-                <div class="Characters4 Pic">
-                  <img src="/img/tank.png" style="width: 100%" class="featurette-image" alt="Generic placeholder image">
-                  <div class="text">Tank</div>
-                </div>
-
-                <div class="Characters4 Pic">
-                  <img src="/img/tank1.png" style="width: 100%" class="featurette-image" alt="Generic placeholder image">
-                  <div class="text">Tank</div>
-                </div>
-
-                 <div class="Characters4 Pic">
-                  <img src="/img/tank2.png" style="width: 100%" class="featurette-image" alt="Generic placeholder image">
-                  <div class="text">Tank</div>
-                </div>
-
-                <a class="last3"   onclick="pSlides3(-1)">&#10094;</a>
-                <a class="change3" onclick="pSlides3(1)">&#10095;</a>
-          </div>
-          <br>
-          <div style="text-align: center">
-              <span class="circle3" onclick="curSlide3(1)"> </span>
-              <span class="circle3" onclick="curSlide3(2)"></span>
-              <span class="circle3" onclick="curSlide3(3)"></span>
-          </div>
-        </div>
-      -
-        <script>
-           var slide3 = 1;
-           Characters4(slide3);
-
-           function pSlides3(n) {
-            Characters4(slide3 += n);
-           }
-
-           function curSlide3(n) {
-              Characters4(slide3 = n)
-           }
-
-           function Characters4(n) {
-             var i;
-             var picT = document.getElementsByClassName("Characters4");
-             var circles3 = document.getElementsByClassName("circle3");
-             if(n > picT.length) {slide3 = 1}
-              if(n < 1) {slide3 = picT.length}
-
-                for(i = 0; i < picT.length; i++){
-                  picT[i].style.display = "none";
-                }
-
-                for(i = 0; i < circles3.length; i++){
-                  circles3[i].className = circles3[i].className.replace(" act3", "");
-                }
-                picT[slide3-1].style.display = "block";
-                circles3[slide3-1].className += " act3";
-           }
-
-         </script>
-      -->
-       </div>
-       
-       
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        
-      </footer>
-
-    </div><!-- /.container -->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     
+  
+      <button id="Btn" class="click">Play Phase</button>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../assets/js/vendor/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+      <div id="pModal" class="pmodal">
+
+      <!-- Modal content -->
+        <div class="pmodal-content">
+          <div class="pmodal-header">
+            <span class="pclose">&times;</span>
+            <h2>Play Phase</h2>
+          </div>
+          <div class="pmodal-body">
+            <p><br>At the start of the Play Phase, a 3D level is generated from the map you created in the Placement Phase. Enemy grunts are placed through the level for you to fight, and a large boss is placed in the boss room.</p>
+            <p>You can run freely around the generated level to encounter enemies. When you find one, enemies will advance toward you and engage you in hand-to-hand combat. You can punch enemies with a left hook or right hook, or dodge them with a quick evasive roll in any direction you’d like. Enemy grunts are the same size as you and have the same types attacks. However, they have much less stopping power and resilience—their health and damage are reduced since they appear in large numbers.</p>
+            <p>The boss is a hulking animated golem. He will lumber around the boss room until you enter it. Once you enter he will begin to chase after you and if he reaches certain attack ranges he will perform different attacks. His main attack is a simple punch combo. If he gets close enough to you he will unleash a punching attack directly in front of him. His secondary attack is his ground slam. This attack has a 15 second cooldown and a wind up time of about 1 second. After that 1 second wind up time he will begin to slam the ground repeatedly within a certain radius of himself. Every 0.1 seconds the player stays within this radius they will take damage as each slam hits the ground.</p>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      var Modal = document.getElementById('pModal');
+      var pbtn = document.getElementById('Btn');
+      var span = document.getElementsByClassName("pclose")[0];
+      pbtn.onclick = function() {
+        Modal.style.display = "block";
+      }
+      span.onclick = function() {
+        Modal.style.display ="none";
+      }
+      window.onclick = function(event){
+        if(event.target == Modal) {
+          Modal.style.display = "none";
+        }
+      }
+    </script>
+
+
+    <div class="containerI">
+      <div id="rowI">
+        <div id="columnI" >
+         <img src="img/PlayPhase1.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="900" height="320" class="responsive">
+        </div>
+        <div id="columnI" >
+         <img src="img/playphase2.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="900" height="320" class="responsive">
+        </div>
+        <div id="columnI" >
+        <img src="img/PlayPhase3.png" alt="PlacementPhase" style="width:100%;" class="responsive" width="900" height="320" class="responsive">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="characters">
+      <div rowC>
+        
+      </div>
+      
+    </div>
+
+</div>
+
+<script>
+
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+  
+</script>
+  
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+
+<!--stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  /*var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update); */
+</script>
+
+
+</body>
 </html>
