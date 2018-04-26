@@ -57,6 +57,16 @@ body{
     clear: both;
 }
 
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+
 /* Team CSS*/
 
 #columnT {
